@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Nómina</title>
+
+
+
+<script>
+    function validarFormulario(){
+        let name = document.forms["formulario"]["fname"].value;
+        let apellido = document.forms["formulario"]["flastname"].value;
+        let Salario = document.forms["formulario"]["falary"].value;
+
+      if(name == "" || apellido == "" || Salario == ""){
+
+    alert("Debe llenar el campo que falta")
+    return false;
+
+      }else{
+
+        alert("Siga en la página")
+
+      }
+
+
+    }
+</script>
+
+
+<script>
+    function imprimirForm(){
+
+let miFormulario = document.forms["formulario"];
+let texto = '';
+for(let elemento of miFormulario){
+    texto += elemento.value + '<br/>';
+}
+
+document.getElementById("ver").innerHTML = texto;
+    
+    }
+</script>
+
+<script>
+
+function calcularNomina(){
+
+    let Salario = document.forms["formulario"]["falary"].value
+    let eps = Salario * 0.04;
+    let pension = Salario * 0.04;
+    let salarioNeto = Salario-eps-pension;
+    let texto = '';
+    document.getElementById("ver").innerHTML = salarioNeto;
+
+}
+
+</script>
+
+</head>
+<body>
+
+    <header>
+
+
+
+    </header>
+
+    <nav> 
+
+    </nav>
+
+    <main>
+
+        <h1>Formulario Usuario</h1><br>  
+<section id="form">
+
+
+<form name="formulario" id="formulario">
+
+nombre <br> <input type="text" name="fname" id="fname"><br></br>
+apellido <br> <input type="text" name="flastname" id="flastname"><br></br>
+Salario <br> <input type="number" name="falary" id="falary"> <br></br>
+
+<br>
+
+</form>
+
+<button id="btnEnviar" onclick="return  validarFormulario() , imprimirForm(), calcularNomina()">
+enviar
+
+</button>
+
+
+</section>
+
+
+
+<section id="print">
+
+<article>
+    <p id ="ver">
+
+ 
+    </p>
+</article>
+
+</section>
+
+    </main>
+
+<footer>
+ 
+    <nav></nav>
+</footer>
+
+
+</body>
+</html>

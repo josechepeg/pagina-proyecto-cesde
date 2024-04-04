@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="fondo">
+    
+<div>
+
+<img id="img" src="img/bird-8579496_1280.jpg" width="300px" alt="Bird">
+
+</div>
+<button onclick="cambiarImagen()">
+    Cambiar Imagen 1
+</button>
+<button onclick="cambiarImagen2()">
+    Cambiar Imagen 2
+</button>
+
+
+<main>
+<section>
+
+<h2 id="h2" onclick="cambiarTitulo(this), cambiarColorTitulo(), cambiarTamañoTitulo()"> Este titulo lo podemos... </h2>
+<br>
+<br>
+<button onclick="cambiarColorFondo('purple')">
+    Morado
+</button>
+
+<br>
+<button onclick="cambiarColorFondo('red')">
+    Rojo
+ </button>
+ <br>
+<button onclick="cambiarColorFondo('green')">
+   Verde
+
+</button>
+<br>
+<button  onclick="cambiarColorFondo('white')">
+    Blanco
+</button>
+</section>
+
+</main>
+
+
+</body>
+
+<script>
+    function cambiarTitulo(titulo){
+
+        titulo.innerHTML = 'cambiar';
+
+    }
+
+function cambiarColorTitulo(titulo){
+
+    document.getElementById("h2").style.color = 'blue';
+}
+
+function cambiarTamañoTitulo(titulo){
+document.getElementById("h2").style.fontSize = '34px';
+
+}
+function cambiarColorFondo(color){
+    document.getElementById("fondo").style.backgroundColor = color;
+}
+
+function cambiarImagen(){
+
+document.getElementById("img").src = 'img/bird-8579496_1280.jpg';
+
+}
+function cambiarImagen2(){
+
+document.getElementById("img").src = 'img/warehouse-8589487_1280 (1).jpg';
+
+}
+
+</script>
+
+</html>
