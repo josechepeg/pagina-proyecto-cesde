@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url('./img/instrumentos.avif');
+    background-size: cover; 
+  }
+  body {
+    background-image: url('./img/imagendefondo.WEBP');
+    background-size: cover; 
+  }
+  body {
+    background-image: url('./img/instrumentosdefondo.AVIF');
+    background-size: cover; 
+  }
+  body {
+    background-image: url('./img/fonditomelo.JPEG');
+    background-size: cover; 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; 
+  }
+  .containerHome {
+   
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; 
+      font-size: 36px; 
+      margin-bottom: 20px; 
+      margin-top: -20px;
+      
+    }
+    h2 {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;  
+    }
+  }
+
+  
+  .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"], button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    display: inline;
+  }
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+  .slider {
+    position: relative; /* Establece el contexto para posicionar los textos */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .slide {
+    position: relative; /* Permite posicionar los textos relativos a este contenedor */
+    width: 60%;
+  }
+  
+  .slider-image {
+    width: 60%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 30px;
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Posiciona el texto en relación con su contenedor */
+    bottom: 30; /* Lo coloca en la parte inferior del contenedor */
+    left: 50%; /* Lo coloca en el centro horizontal del contenedor */
+    transform: translateX(-70%); /* Ajusta la posición horizontal para que esté centrado */
+  }
+
+  .contenedor {
+    display: flex;
+    align-items: center;
+    height: 0vh;
+    flex-direction: column; 
+    h2 {
+      font-size: 40px; 
+      margin-top: 90px;
+      color: brown;
+      font-family: "Times New Roman", serif;
+    }
+
+    .slider-contact{
+
+
+      position: relative;
+    }
+
+
+  }
+  .slider-contact {
+
+    position: absolute; /* Posición absoluta con respecto al contenedor */
+    top: 50%; /* Se mueve al 50% desde la parte superior del contenedor */
+    left: 50%; /* Se mueve al 50% desde el lado izquierdo del contenedor */
+    transform: translate(-50%, -50%); /* Mueve la imagen hacia atrás y arriba la mitad de su tamaño */
+     }
+
+.containerContact{
+
+  h3{
+    font-size: 25px; 
+    margin-top: 500px;
+    text-align: center;
+    color: brown;
+    font-family: Arial, sans-serif;
+  }
+  h4{
+    text-align: center;
+
+  }
+
+}
+ 
+
